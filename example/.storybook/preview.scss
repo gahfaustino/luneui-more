@@ -1,0 +1,20 @@
+@use 'luneui/boniteza' as *;
+
+// Setup base styles with both themes
+@include setup((
+    fontRegular: '/fonts/Quicksand-Regular.ttf',
+    fontBold: '/fonts/Quicksand-Bold.ttf',
+    includeResets: true,
+    includeUtilities: true,
+    themes: (
+        'techcorp': ':root[data-theme="techcorp"]',
+        'oldstoreltda': ':root[data-theme="oldstoreltda"]'
+    )
+));
+
+body {
+    --luneui-sm-radius: 2px;
+    --luneui-md-radius: 5px;
+    --luneui-lg-radius: 10px;
+    --luneui-xl-radius: 15px;
+}

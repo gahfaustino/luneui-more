@@ -1,0 +1,79 @@
+{
+    "name": "luneui",
+    "type": "module",
+    "version": "1.0.0",
+    "scripts": {
+        "prepare": "husky",
+        "pre-commit": "lint-staged",
+        "build:pkg": "node scripts/build.js",
+        "lint": "eslint src/**/* --fix"
+    },
+    "devDependencies": {
+        "@eslint/js": "9.39.1",
+        "@types/node": "24.10.1",
+        "@typescript-eslint/parser": "8.48.1",
+        "eslint": "9.39.1",
+        "eslint-plugin-react": "7.37.5",
+        "eslint-plugin-simple-import-sort": "12.1.1",
+        "husky": "9.1.7",
+        "jsdom": "27.2.0",
+        "lint-staged": "16.2.7",
+        "luneui": "1.3.0",
+        "react": "19.2.1",
+        "react-dom": "19.2.1",
+        "sass": "1.94.2",
+        "sass-true": "10.0.1",
+        "typescript": "5.9.3",
+        "typescript-eslint": "8.48.1",
+        "vite-tsconfig-paths": "5.1.4",
+        "vitest": "4.0.15"
+    },
+    "exports": {
+        ".": "./index.js",
+        "./ds": "./ds.js",
+        "./icons": "./icons.js",
+        "./integration": "./integration.js",
+        "./boniteza": {
+            "types": "./boniteza.d.ts",
+            "default": "./scss/index.scss"
+        },
+        "./config": "./scss/config.scss"
+    },
+    "files": [
+        "components",
+        "icons",
+        "scss",
+        "utils",
+        "ds.d.ts",
+        "ds.js",
+        "index.js",
+        "index.d.ts",
+        "integration.js",
+        "integration.d.ts",
+        "boniteza.d.ts",
+        "README.md",
+        "LICENSE"
+    ],
+    "license": "MIT",
+    "description": "Built due a test for Môre - The better UI Lib that this person have ever seen! Did you love it! I know you do :)",
+    "keywords": [
+        "luneui",
+        "components",
+        "ui components",
+        "ui library",
+        "component library",
+        "react components",
+        "design system"
+    ],
+    "homepage": "https://luneui.lunare.tech",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gahfaustino/luneui.git"
+    },
+    "bugs": {
+        "url": "https://github.com/gahfaustino/luneui/issues"
+    },
+    "lint-staged": {
+        "*.{js,ts,jsx,tsx}": "eslint src/**/*"
+    }
+}

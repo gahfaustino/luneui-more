@@ -1,0 +1,15 @@
+@use '../config' as *;
+
+@mixin breakpoints() {
+    :root {
+        --luneui-breakpoint: xs;
+    }
+
+    @each $key, $value in $breakpoints {
+        @include media($key) {
+            :root {
+                --luneui-breakpoint: #{$key};
+            }
+        }
+    }
+}

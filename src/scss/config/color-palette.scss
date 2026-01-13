@@ -1,0 +1,24 @@
+$colorPalette: (
+    'primary': var(--luneui-color-primary),
+    'primary-10': var(--luneui-color-primary-10),
+    'primary-20': var(--luneui-color-primary-20),
+    'primary-30': var(--luneui-color-primary-30),
+    'primary-40': var(--luneui-color-primary-40),
+    'primary-50': var(--luneui-color-primary-50),
+    'primary-60': var(--luneui-color-primary-60),
+    'primary-70': var(--luneui-color-primary-70),
+
+    'info': var(--luneui-color-info),
+    'info-accent': var(--luneui-color-info-accent),
+    'info-fg': var(--luneui-color-info-fg),
+    'success': var(--luneui-color-success),
+    'success-accent': var(--luneui-color-success-accent),
+    'success-fg': var(--luneui-color-success-fg),
+    'warning': var(--luneui-color-warning),
+    'warning-accent': var(--luneui-color-warning-accent),
+    'warning-fg': var(--luneui-color-warning-fg),
+    'alert': var(--luneui-color-alert),
+    'alert-accent': var(--luneui-color-alert-accent),
+    'alert-fg': var(--luneui-color-alert-fg),
+    'overlay': var(--luneui-color-overlay)
+) !default;

@@ -1,0 +1,5 @@
+@use 'luneui/boniteza' as *;
+@include setup((
+    fontRegular: '/fonts/Quicksand-Regular.ttf',
+    fontBold: '/fonts/Quicksand-Bold.ttf'
+));

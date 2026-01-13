@@ -1,0 +1,24 @@
+@use '../config' as *;
+
+@mixin scrollbar() {
+    body {
+        --luneui-scrollbar-bg: var(--luneui-color-primary-60);
+        --luneui-scrollbar-fg: var(--luneui-color-primary-50);
+    }
+
+    ::-webkit-scrollbar {
+        @include size(10px);
+    }
+    
+    ::-webkit-scrollbar-track {
+        @include border-radius(md);
+        @include background(var(--luneui-scrollbar-bg));
+        cursor: pointer;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        @include border-radius(md);
+        @include background(var(--luneui-scrollbar-fg));
+        cursor: pointer;
+    }
+}

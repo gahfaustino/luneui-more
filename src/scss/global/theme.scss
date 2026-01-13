@@ -1,0 +1,74 @@
+@use '../config' as *;
+
+@mixin theme($theme: 'techcorp', $selector: ':root') {
+
+    // 🌙 TechCorp - Tema escuro inspirado na lua em noite estrelada
+    @if $theme == 'techcorp' {
+        #{$selector} {
+            --luneui-color-scheme: dark;
+            --luneui-color-primary: #E8E6F0; // Moonlight white
+            --luneui-color-primary-10: #D4D1E3;
+            --luneui-color-primary-20: #9B95C1; // Soft lavender
+            --luneui-color-primary-30: #6B6498; // Deep purple
+            --luneui-color-primary-40: #3E3860; // Midnight purple
+            --luneui-color-primary-50: #2A2544; // Dark night
+            --luneui-color-primary-60: #1A1730; // Deep space
+            --luneui-color-primary-70: #0F0D1F; // Void black
+
+            --luneui-color-info: #7B9FF5; // Starry blue
+            --luneui-color-info-accent: #96B3FF;
+            --luneui-color-info-fg: #0F0D1F;
+            --luneui-color-success: #6ECFA0; // Aurora green
+            --luneui-color-success-accent: #8EE5BC;
+            --luneui-color-success-fg: #0F0D1F;
+            --luneui-color-warning: #FFB86C; // Moonrise orange
+            --luneui-color-warning-accent: #FFCA8A;
+            --luneui-color-warning-fg: #0F0D1F;
+            --luneui-color-alert: #FF6B9D; // Nebula pink
+            --luneui-color-alert-accent: #FF8AB3;
+            --luneui-color-alert-fg: #0F0D1F;
+            --luneui-color-overlay: #0F0D1FCC;
+            
+            // WCAG: Focus indicators
+            --luneui-focus-ring: 2px solid #96B3FF;
+            --luneui-focus-offset: 2px;
+            --luneui-focus-color: #96B3FF;
+        }
+    }
+
+    // ☀️ OldStoreLtda - Tema claro inspirado no luar suave da manhã
+    @if $theme == 'oldstoreltda' {
+        #{$selector} {
+            --luneui-color-scheme: light;
+            --luneui-color-primary: #2A2544; // Deep night text
+            --luneui-color-primary-10: #3E3860;
+            --luneui-color-primary-20: #6B6498;
+            --luneui-color-primary-30: #9B95C1; 
+            --luneui-color-primary-40: #C4BFE0; // Soft lavender
+            --luneui-color-primary-50: #DDD9F0; // Morning mist
+            --luneui-color-primary-60: #F0EDF8; // Pearl white
+            --luneui-color-primary-70: #F8F6FC; // Soft moonlight
+
+            --luneui-color-info: #5B7FE5; // Clear sky blue
+            --luneui-color-info-accent: #7B9FF5;
+            --luneui-color-info-fg: #FFFFFF;
+            --luneui-color-success: #3EB88C; // Fresh mint
+            --luneui-color-success-accent: #5ECAA2;
+            --luneui-color-success-fg: #FFFFFF;
+            --luneui-color-warning: #E89849; // Sunrise gold
+            --luneui-color-warning-accent: #F5AD65;
+            --luneui-color-warning-fg: #2A2544;
+            --luneui-color-alert: #E64874; // Rose dawn
+            --luneui-color-alert-accent: #F26890;
+            --luneui-color-alert-fg: #FFFFFF;
+            --luneui-color-overlay: #2A254499;
+            
+            // WCAG: Focus indicators
+            --luneui-focus-ring: 2px solid #5B7FE5;
+            --luneui-focus-offset: 2px;
+            --luneui-focus-color: #5B7FE5;
+        }
+    }
+}
+
+
