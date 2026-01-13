@@ -95,18 +95,6 @@ Crie um arquivo SCSS global no seu projeto (ex: `src/boniteza.scss`) para config
 ));
 ```
 
-### Opções de Configuração (Para os Perfeccionistas)
-
-O mixin `setup` aceita várias opções para você customizar do seu jeito:
-
-| Property  | Default value | Purpose |
-|-----------|---------------|---------|
-| `includeResets` | `true` | Include reset styles. Set to `false` if you want to use your own CSS resets. |
-| `includeUtilities` | `true` | Adds utility classes for CSS. Read more about the available utility classes [here](https://luneui.lunare.tech/docs/layout). |
-| `includeTooltip` | `true` | Adds styles for using tooltips.
-| `includeScrollbarStyles` | `true` | Adds styles for scrollbars.
-| `includeBreakpoints` | `true` | Expõe variáveis de breakpoint em CSS para JS. Usado pelos componentes para responsividade.
-
 ### Personalização de Estilos (Porque Você é Único ❄️)
 
 Você pode sobrescrever as variáveis CSS padrão para deixar tudo com a sua cara:
@@ -140,23 +128,6 @@ function App() {
   )
 }
 ```
-
-## ✅ Tarefas do Teste (Seu Checklist para a Glória)
-
-1. **Configuração do Ambiente** (O Básico)
-   - [ ] Instalar dependências da biblioteca (sem chorar)
-   - [ ] Buildar o projeto com sucesso (na primeira tentativa, quem sabe?)
-   - [ ] Configurar npm link (sem quebrar o Node)
-
-2. **Integração** (A Parte Importante)
-   - [ ] Linkar a biblioteca no projeto de exemplo
-   - [ ] Configurar os estilos SCSS no projeto de exemplo
-   - [ ] Executar o projeto de exemplo (e ver a mágica acontecer)
-
-3. **Desenvolvimento** (Para os Ambiciosos 🌟)
-   - [ ] Criar um novo componente (mostre suas habilidades!)
-   - [ ] Adicionar testes para o componente (sim, testes são importantes)
-   - [ ] Documentar o componente criado (seu eu futuro agradece)
 
 ## 🛠️ Scripts Disponíveis (Seus Novos Melhores Amigos)
 
@@ -198,16 +169,3 @@ luneui/
 ├── dist/             # Arquivos compilados (gerados após build, não mexa aqui!)
 └── package.json      # Dependências e scripts (o mapa do tesouro)
 ```
-
-## 🎓 Critérios de Avaliação (O Que Estamos Procurando)
-
-- ✅ **Capacidade de seguir instruções técnicas** (spoiler: você já está indo bem se chegou até aqui!)
-- ✅ **Conhecimento de ferramentas de desenvolvimento** (npm, build tools e outras coisas legais)
-- ✅ **Compreensão de gerenciamento de dependências** (porque `node_modules` não se gerencia sozinho)
-- ✅ **Organização e metodologia de trabalho** (commits claros > commits tipo "fix" ou "aaaa funciona")
-
----
-
-**Boa sorte, e que o IntelliSense esteja com você! 🚀✨**
-
-*P.S.: Se você encontrar bugs, não foi de propósito. Se você não encontrar bugs, procurou direito? 😄*
